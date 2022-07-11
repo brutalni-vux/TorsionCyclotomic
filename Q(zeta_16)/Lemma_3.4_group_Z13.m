@@ -45,5 +45,5 @@ for i in [1..19] do
     (i * P)[1];
 end for;
 
-"Clearly, all of them have rational roots 1, 0 or -1.";
-"They give either cuspidal rational points or a point (1 : +-sqrt(17) : 1).";
+"Clearly, all of them have rational roots 0 or -1.";
+"They give only cuspidal rational points.";
