@@ -19,7 +19,7 @@ O := MaximalOrder(K);
 "";
 
 "By Katz's theorem, J_1(16)(Q(sqrt(-11)))_tors has at most this many elements:";
-#BaseChange(J16, GF(3));
+#BaseChange(J, GF(3));
 
 "J_1(16)(Q)_tors has this many elements:";
 #TorsionSubgroup(J);
