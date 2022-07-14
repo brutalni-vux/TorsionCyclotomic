@@ -2,6 +2,7 @@ K := CyclotomicField(16);
 L := CyclotomicField(8);
 P<x> := PolynomialRing(L);
 
+//model for X1(16)
 C := HyperellipticCurve(x*(x^2+1)*(x^2+2*x-1));
 J := Jacobian(C);
 
@@ -65,6 +66,8 @@ end for;
 
 "We have found this many elements on J_1(16)(Q(zeta_16))_tors:";
 #J16Torsion;
+
+assert #BaseChange(J16, GF(17)) eq #J16Torsion;
 "Hence, those are all of them";
 
 //check that we have no duplicates
