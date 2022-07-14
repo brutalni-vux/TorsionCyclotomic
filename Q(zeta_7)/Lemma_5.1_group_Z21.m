@@ -1,4 +1,4 @@
-//the curves from isogeny class https://www.lmfdb.org/EllipticCurve/Q/162/b/
+//the curves from the isogeny class https://www.lmfdb.org/EllipticCurve/Q/162/b/
 //they are the only j-invariants allowing a rational 21-isogeny
 
 E := EllipticCurve([1, -1, 0, -1077, 13877]);
