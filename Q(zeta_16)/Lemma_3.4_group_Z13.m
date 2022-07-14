@@ -3,6 +3,7 @@ L := CyclotomicField(8);
 
 P<x> := PolynomialRing(K);
 
+//model for X1(13)
 C := HyperellipticCurve(x^6 + 4*x^5 + 6*x^4 + 2*x^3 + x^2 + 2*x + 1);
 J := Jacobian(C);
 
