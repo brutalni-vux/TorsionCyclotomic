@@ -1,6 +1,7 @@
 K := CyclotomicField(9);
 L := Subfields(K)[3][1];
 
+//check that L == Q(zeta_9)+
 assert Degree(L) eq 3;
 
 P<x> := PolynomialRing(L);
@@ -9,7 +10,7 @@ C := HyperellipticCurve(x^6 + 4*x^5 + 6*x^4 + 2*x^3 + x^2 + 2*x + 1);
 J := Jacobian(C);
 
 
-"The rank of J1(13)(Q(zeta_16)) is at most:";
+"The rank of J1(13)(Q(zeta_9)+) is at most:";
 RankBound(J);
 "";
 
@@ -41,6 +42,8 @@ P := pts[3] - pts[2];
 "J_1(13)(Q)_tors has at least this many elements:";
 Order(P);
 "";
+
+assert Order(P) eq Gcd(#BaseChange(J, GF(19)), #BaseChange(J, GF(71)));
 
 "Hence, J_1(13)(Q(zeta_9)+) == J_1(13)(Q)";
 
